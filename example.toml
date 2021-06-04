@@ -1,0 +1,10 @@
+[Http]
+Listen = ":8080" # порт запуска сервера
+
+[Logger]
+Severity = "info" # уровень репорта ошибок
+Encoder = "console" # формат вывода: json или console
+
+[Weather]
+ApiKey = "PUT-API-KEY" # api ключ от https://openweathermap.org/api
+DefaultCity = "Almaty" # дефолтный город
