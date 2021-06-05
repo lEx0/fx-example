@@ -22,10 +22,11 @@ package config
 
 import (
 	"github.com/BurntSushi/toml"
-	weather2 "github.com/lEx0/fx-example/pkg/weather"
+	"go.uber.org/fx"
+
+	"github.com/lEx0/fx-example/pkg/weather"
 	"github.com/lEx0/fx-http-module"
 	"github.com/lEx0/fx-logger-module"
-	"go.uber.org/fx"
 )
 
 type (
@@ -34,7 +35,7 @@ type (
 
 		Http    http.Options
 		Logger  logger.Options
-		Weather weather2.Options
+		Weather weather.Options
 	}
 	Params struct {
 		fx.In
